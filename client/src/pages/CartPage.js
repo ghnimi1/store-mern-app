@@ -26,7 +26,7 @@ function CartPage({ history }) {
                 cartItems?.map(item => (
                     <Row key={item._id}>
                         <Col md={2}>
-                            <Image src={`http://localhost:5000/${item?.image}`} alt={item?.image} fluid />
+                            <Image src={`https://storemernapp.herokuapp.com/${item?.image}`} alt={item?.image} fluid />
                         </Col>
                         <Col md={2}>
                             {item?.name}

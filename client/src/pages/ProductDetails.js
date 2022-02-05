@@ -35,7 +35,7 @@ function ProductDetails({ match, history }) {
             </Link>
             <Row>
                 <Col md={6}>
-                    <Image src={`http://localhost:5000/${product?.image}`} alt={product?.name} fluid />
+                    <Image src={`https://storemernapp.herokuapp.com/${product?.image}`} alt={product?.name} fluid />
                 </Col>
                 <Col md={3}>
                     <h4> {product?.name} </h4>

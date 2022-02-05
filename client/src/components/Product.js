@@ -8,7 +8,7 @@ const Product = ({ product }) => {
         <Card className='my-3 p-3 rounded'>
             <Link to={`/product/${product._id}`}>
                 <Card.Img style={{ height: '150px' }}
-                    src={`http://localhost:5000/${product.image}`} variant='top' />
+                    src={`https://storemernapp.herokuapp.com/${product.image}`} variant='top' />
             </Link>
 
             <Card.Body>

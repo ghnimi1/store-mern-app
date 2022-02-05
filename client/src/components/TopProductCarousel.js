@@ -16,7 +16,8 @@ const TopProductCarousel = () => {
             {topProducts?.map((product) => (
                 <Carousel.Item key={product._id}>
                     <Link to={`/product/${product._id}`}>
-                        <Image fluid style={{ height: '400px', width: '100%' }} src={`http://localhost:5000/${product.image}`} alt={product.name} fluid />
+                        <Image fluid style={{ height: '400px', width: '100%' }}
+                            src={`https://storemernapp.herokuapp.com/${product.image}`} alt={product.name} fluid />
                         <Carousel.Caption className='carousel-caption'>
                             <h2>
                                 {product.name} (${product.price})
